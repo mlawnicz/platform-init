@@ -16,8 +16,8 @@ int init_jcrp()
 
     // skipping FRU validation and S2D discovery as it's not relevant at this
     // stage
-    gpio::set("HPM_FRU_READ_DONE", 1);
     gpio::set("HPM0_FRU_VALID", 1);
+    gpio::set("HPM_FRU_READ_DONE", 1);
     gpio::set("FM_S2D_DISCOVERY_DONE", 1);
 
     gpio::set("BMC_BOOT_DONE", 1);
